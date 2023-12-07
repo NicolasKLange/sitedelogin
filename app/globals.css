@@ -89,10 +89,10 @@ a:hover{
     color: lightgoldenrodyellow;
 }
 
-.jogador1{
+.jogadores{
+
     border: 3px solid black;
 }
-
-.jogador2{
-    border: 3px solid black;
+h2{
+    border-radius: 20px;
 }
