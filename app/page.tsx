@@ -30,7 +30,7 @@ export default function Page() {
     <div onClick={redirecionar} className="page"> 
       <div className="titulo">
       <h1>Jogo da Velha</h1>
-      <h2>clique na barra de espaço para jogar</h2>
+      <h2>Clique na barra de espaço para jogar</h2>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import { BsArrowCounterclockwise } from "react-icons/bs";
-import { BsFillHouseFill } from "react-icons/bs";
+import { FaHome } from "react-icons/fa";
 import { BsShare } from "react-icons/bs";
 
 
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div>
       <h1>Jogo da Velha</h1>
-      <h2>jogue com moderação</h2>
+      <h2>Jogue com moderação e seus amigos</h2>
       <table>
         <tbody>
           <tr>
@@ -51,7 +51,7 @@ export default function Home() {
       </table>
       <div className='button'>
         <a href="/jogo"><BsArrowCounterclockwise /></a>
-        <a href="/"><BsFillHouseFill /></a>
+        <a href="/"><FaHome /></a>
         <a onClick={copyText}><BsShare /></a>
       </div>
     </div>
