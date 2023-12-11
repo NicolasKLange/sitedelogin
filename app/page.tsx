@@ -1,35 +1,37 @@
-import { MdExposurePlus1 } from "react-icons/md";
+"use client"
+import Link from "next/link";
+import './style.css'
+import { useEffect } from 'react';
 
 
+export default function Page() {
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.code === 'Space') {
+        // Utilize a função push para redirecionar para a próxima página
+        window.location.href =
+          window.location.pathname === './jogo' ? './jogo' : './jogo';
+      }
+    };
 
-export default function page() {
-  return (  
-    <div>
-      <h1> - Jogo da Velha - </h1>
-        <table>
-          <tbody>
-            <tr>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-          </tbody>
-        </table>
-        <div className="jogadores">
-            <h2>Jogador 1</h2>
-                <button><a href="/"><MdExposurePlus1 /></a></button>
-            <h2>Jogador 2</h2>
-        </div>
+    window.addEventListener('keydown', handleKeyDown);
+
+    // Limpar o evento ao desmontar o componente
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []); // Sem a dependência router
+
+  function redirecionar() {
+    window.location.href="./jogo"
+  }
+
+  return(
+    <div onClick={redirecionar} className="page"> 
+      <div className="titulo">
+      <h1>Jogo da Velha</h1>
+      <h2>clique na barra de espaço para jogar</h2>
+      </div>
     </div>
-    )
+  )
 }

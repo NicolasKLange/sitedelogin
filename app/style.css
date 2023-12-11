@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 10vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3vh;
+    color: gray;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    animation: blink 1s steps(1, end) infinite;
+  }
+
+.page {
+  height: 100vh;
+}
+  
+  @keyframes blink { 
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
