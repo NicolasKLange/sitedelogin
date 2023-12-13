@@ -158,11 +158,12 @@ export default function Home() {
         <a onClick={copyText}><BsShare /></a>
       </div>
       <div className="players">
-        <h3>Jogador X</h3><br></br>
+        <h3>Jogador X</h3>
         <h3>Jogador O</h3>
       </div>
       <div className="addPonitsPlayer">
         <a id="dois" onClick={addPointsX}><IoIosAddCircleOutline/></a>
+        
         <a id="dois" onClick={addPointsO}><IoIosAddCircleOutline/></a>
       </div>
     </div>
