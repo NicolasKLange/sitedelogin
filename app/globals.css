@@ -80,4 +80,4 @@ a:hover {
     to {
       border-image-source: linear-gradient(45deg, blue, red, green);
     }
-  }
+}
