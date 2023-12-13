@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { BsShare } from "react-icons/bs";
 
 
-export default function Home() {
+export default function Home() {            
   function copyText() {
     // Get the text field
     const copyText = "https://jogo-da-velha-next-peach.vercel.app/";
