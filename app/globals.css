@@ -89,8 +89,10 @@ a:hover {
 
 h3{
     display: flex;
+    flex-wrap: wrap;
     color: aliceblue;
     margin-right: 30px;
+    text-align: center;
 }
 .players{
     display: flex;
